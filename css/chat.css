@@ -1,0 +1,104 @@
+/*LETRA
+
+font-family: 'Manrope', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+LETRA*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #DBF6E9;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: #31326F;
+    border-radius: 5px;
+}
+
+
+/*Header*/
+
+header .sup{
+    height: auto;
+    background-color: #FFF2EA;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo{
+    margin: 1vw 0vw 1vw 0vw;
+}
+
+header #logo img{
+    width: 6%;
+    height: 100%;
+    margin: 2px 0px 0px 12vw;
+    
+}
+
+header .sup .men{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 16vw;
+}
+
+header .sup .men .cat{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+
+
+header .sup .men .cat i{
+    color: #36251d;
+    font-size: 25px;
+    margin: 37px 1vw 1vw 1vw;
+}
+
+header .sup .men .cat i:hover{
+    color: #FFF2EA !important;
+    transition: 1.8s;
+    -webkit-transition: 1.8s;
+    -moz-transition: 1.8s;
+    -ms-transition: 1.8s;
+    -o-transition: 1.8s;
+}
+
+
+
+header .sup .men .pro i{
+    color: #36251d;
+    font-size: 40px;
+    margin: 27px 1vw 1vw 1vw;
+}
+
+header .sup .men .pro i:hover{
+    color: #FFF2EA !important;
+    transition: 1.8s;
+    -webkit-transition: 1.8s;
+    -moz-transition: 1.8s;
+    -ms-transition: 1.8s;
+    -o-transition: 1.8s;
+}
+
+
+header .sup .men .cat #sep{
+    height: auto;
+    background-color: #cabeb7;
+    width: 1px;
+}
+
+#sep1{
+    background-color: #cabeb7;
+    height: 1px;
+    width: auto;
+}
