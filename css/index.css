@@ -273,6 +273,10 @@ main {
 
 
 /*Body*/
+body{
+    transition: all .3s;
+}
+
 
 body .prin{
     display: flex;
@@ -693,6 +697,9 @@ body .prin #ban img{
 
 /*BAÑOS*/
 
+.loading{
+    opacity: 0;
+}
 
 /*Body*/
 
