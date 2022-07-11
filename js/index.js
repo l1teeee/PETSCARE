@@ -22,7 +22,7 @@ window.sr = ScrollReveal();
     });
 
     sr.reveal('.hor', {
-        duration: 6200,
+        duration: 4000,
         origin: 'right',
         distance:'3px'
 
@@ -39,5 +39,26 @@ window.sr = ScrollReveal();
         duration: 5000,
         origin: 'left',
         distance:'-70px'
+
+    });
+
+    sr.reveal('.tipo', {
+        duration: 4000,
+        origin: 'left',
+        distance:'-100px'
+
+    });
+
+    sr.reveal('#titular', {
+        duration: 4000,
+        origin: 'right',
+        distance:'-10px'
+
+    });
+
+    sr.reveal('.fia', {
+        duration: 3000,
+        origin: 'top',
+        distance:'-5px'
 
     });
