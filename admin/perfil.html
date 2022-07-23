@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="css/perfil.css" rel="stylesheet" type="text/css">
     <script src="js/scrollreveal.js"></script>
     <link rel="icon" href="media/logo.png">
     <script src="https://kit.fontawesome.com/28b946baf8.js" crossorigin="anonymous"></script>
@@ -25,14 +25,14 @@
         <div class="men">
                 <main class="cat">
                     <div>
-                        <a href="adopcion.html"><span tooltip="Productos" flow="down"><i class="fa-solid fa-dog"></i></span></a>
+                        <a href="adopcion.html"><span tooltip="Adopción" flow="down"><i class="fa-solid fa-dog"></i></span></a>
                     </div>
-                    <!--<div>
+                    <div>
                         <a href="cita.html"><span tooltip="Cita" flow="down"><i class="fa-solid fa-stethoscope"></i></span></a>
                     </div>
                     <div>
                         <a href="chat.html"><span tooltip="Chat" flow="down"><i class="fa-solid fa-comments"></i></span></a>
-                    </div>-->
+                    </div>
                     <div>
                         <a href="producto.html"><span tooltip="Productos" flow="down"><i class="fa-solid fa-cookie"></i></span></a>
                     </div>
@@ -47,61 +47,98 @@
                 <div id="sep"></div>
                 <a href="producto.html"><i class="fa-solid fa-cookie"></i></a>
                 <div id="sep"></div>-->
-            
+            <div class="cat">
+            </div>
             <div class="pro">
-                <a href="perfil.html"><span tooltip="Iniciar Sesión" flow="down"><i class="fa-solid fa-user"></i></span></a>
+                <a href="perfil.html"><span tooltip="Perfil" flow="down"><i class="fa-solid fa-user"></i></span></a>
             </div>
         </div>
     </div>
     <div id="sep1"></div>
 </header>
-<body>
+<body id="cuer">
 
-    <div class="alpha">
-        <div class="formu" >
-            <div class="enca">
-                <h8>Iniciar Sesión</h8>
-                <h9>Hey, ingresa tus datos para iniciar <br>sesión en tú cuenta.</h9>
+    <div class="formu" >
+        <div class="enca">
+            <img src="media/dueños/pau.jpg" alt="">
+            <div class="name">
+                <h8>Paula Calderón</h8>
+                <a href="editar.html"><span tooltip="Editar perfil" flow="down"><i class="fa-solid fa-pen-to-square"></i></span></a>
             </div>
-            <div class="ingre">
-                <input id="mail" placeholder="Ingresa Email" required>
-                <div class="contras">
-                    <input type="password" name="password" id="password" placeholder="Contraseña" required>                
-                    <i class="fa-solid fa-eye" onclick="mostrarContrasena()"></i>
+            <div class="per">
+                <div class="caracte" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="cara">
+                        <div class="cara1">
+                            <div id="circu">
+                                <i class="fa-solid fa-paw"></i>
+                            </div>
+                            <div class="defi">
+                                <p>Mascotas " "</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cara">
+                        <div class="cara1">
+                            <div id="circu">
+                                <i class="fa-solid fa-calendar-minus"></i>
+                            </div>
+                            <div class="defi">
+                                <p>Citas " "</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cara">
+                        <div class="cara1">
+                            <div id="circu">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="defi">
+                                <p>Adopción " "</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <script>
-                    function mostrarContrasena(){
-                        var tipo = document.getElementById("password");
-                        if(tipo.type == "password"){
-                            tipo.type = "text";
-                        }else{
-                            tipo.type = "password";
-                        }
-                    }
-                  </script>
             </div>
-            <div id="titu2">
-                <a href="producto.html"><p>No puedes iniciar sesión?</p></a>
+            <div class="Ubi">
+                <div class="home">
+                    <i class="fa-solid fa-at"></i>
+                </div>
+                <div class="pin">
+                    <h8>Correo del Usuario: paucalde@gmail.com </h8>
+                </div>
             </div>
-            <div class="regi">
-                <a id="bt">Iniciar Sesión</a>
+            <div class="Ubi">
+                <div class="home">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="pin">
+                    <h8>Residencial Los Girasoles 2, Casa #23, Poligono 5, Santa Tecla </h8>
+                </div>
             </div>
-            <div class="nocu">
-                <h9>No tienes una cuenta?</h9>
-                <div id="nocuen">
-                    <a href="register.html"><p>Crea una</p></a>
+            <div class="Ubi">
+                <div class="home">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="pin">
+                    <h8>Modo de Paga: Efectivo</h8>
+                </div>
+            </div>
+            <div class="Ubi">
+                <div class="home">
+                    <i class="fa-solid fa-calendar-day"></i>
+                </div>
+                <div class="pin">
+                    <h8>Fecha de Nacimiento: 14/05/2003</h8>
                 </div>
             </div>
         </div>
-        <div class="image">
-            <img src="media/LOGIN/log.jpg" alt="">
-        </div>
+        
     </div>
 
+
+
+
     
-
-
-
 
     <!--No tocar-->
     

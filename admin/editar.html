@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="css/register.css" rel="stylesheet" type="text/css">
     <script src="js/scrollreveal.js"></script>
     <link rel="icon" href="media/logo.png">
     <script src="https://kit.fontawesome.com/28b946baf8.js" crossorigin="anonymous"></script>
@@ -47,7 +47,8 @@
                 <div id="sep"></div>
                 <a href="producto.html"><i class="fa-solid fa-cookie"></i></a>
                 <div id="sep"></div>-->
-            
+            <div class="cat">
+            </div>
             <div class="pro">
                 <a href="perfil.html"><span tooltip="Iniciar Sesión" flow="down"><i class="fa-solid fa-user"></i></span></a>
             </div>
@@ -60,13 +61,17 @@
     <div class="alpha">
         <div class="formu" >
             <div class="enca">
-                <h8>Iniciar Sesión</h8>
-                <h9>Hey, ingresa tus datos para iniciar <br>sesión en tú cuenta.</h9>
+                <h8>Registrarte</h8>
             </div>
             <div class="ingre">
-                <input id="mail" placeholder="Ingresa Email" required>
+                <div class="nombres">
+                    <input placeholder="Primer nombre" required>
+                    <input placeholder="Primer apellido" required>
+                </div>
+                <input id="ema" placeholder="Ingresa su email" required>
+
                 <div class="contras">
-                    <input type="password" name="password" id="password" placeholder="Contraseña" required>                
+                    <input type="password" name="password" id="password" placeholder="Ingrese una contraseña" required>                
                     <i class="fa-solid fa-eye" onclick="mostrarContrasena()"></i>
                 </div>
                 <script>
@@ -80,21 +85,16 @@
                     }
                   </script>
             </div>
-            <div id="titu2">
-                <a href="producto.html"><p>No puedes iniciar sesión?</p></a>
-            </div>
-            <div class="regi">
-                <a id="bt">Iniciar Sesión</a>
-            </div>
+            <button id="env" type="button" style="outline:none;" class="btn btn-warning" >Crear cuenta</button>
             <div class="nocu">
-                <h9>No tienes una cuenta?</h9>
+                <h9>Ya tienes una cuenta?</h9>
                 <div id="nocuen">
-                    <a href="register.html"><p>Crea una</p></a>
+                    <a href="perfil.html"><p>Inicia Sesión</p></a>
                 </div>
             </div>
         </div>
         <div class="image">
-            <img src="media/LOGIN/log.jpg" alt="">
+            <img src="media/LOGIN/4968854.jpg" alt="">
         </div>
     </div>
 

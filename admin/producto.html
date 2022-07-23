@@ -98,8 +98,36 @@
         <div class="produc">
             <div id="titular">
                 <h1>Nuevos productos</h1>
-                <a href="editar.html"><span tooltip="Editar perfil" flow="down"><i class="fa-solid fa-pen-to-square"></i></span></a>
+                <span tooltip="Agregar Producto" flow="down"><i onclick="openmodal()" class="fa-solid fa-pen-to-square"></i></span>
+                <p id="button" class="btn" onclick="openmodal()"><span tooltip="Agregar Producto" flow="down"><i class="fa-solid fa-plus"></i></p></span>
+
+                
+                <script>
+                        function openmodal() {
+                        var mdl = document.getElementById("myModal");
+                        mdl.style.display="block"
+                    };
+
+                        function closemodal() {
+                        var mdl = document.getElementById("myModal");
+                        mdl.style.display="none"
+                    };
+                </script>
+
             </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close_modal" onclick="closemodal()">&times;</span>
+                <p class="modal_text">You must be registered and logged in for this action.</p>
+                <br>
+                <form class="modal_voto">
+                <a href="#" class="btn_modal" target="_blank">Login</a>
+                <a href="#" class="btn_modal" target="_blank">Register</a>
+                </form>
+                </div>
+            </div>
+
             <div class="fia">
                 <div class="conten">
                     <div class="product-card">
