@@ -62,3 +62,17 @@ window.sr = ScrollReveal();
         distance:'-5px'
 
     });
+
+    sr.reveal('.formu', {
+        duration: 3000,
+        origin: 'top',
+        distance:'-3px'
+
+    });
+
+    sr.reveal('.image', {
+        duration: 3000,
+        origin: 'right',
+        distance:'-1px'
+
+    });

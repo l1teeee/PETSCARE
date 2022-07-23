@@ -265,19 +265,20 @@ main {
 /*prueba*/
 
 /*Body*/
+
+.alpha{
+  display: flex;
+  flex-direction: row;
+}
+
+
 #cuer{
   background-color: #FFF2EA;
 }
 
 .formu{
-  margin: 4vw 33% 5vw 33%;
-  width: 32vw;
-  background: rgba( 255, 255, 255, 0.9 );
-box-shadow: 0 0px 15px 0 rgba(14, 14, 17, 0.207);
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 30px;
-border: 1px solid rgba(255, 255, 255, 0.07);
+  width: 45%;
+  margin-top: 7.5vw;
 }
 
 .formu .enca{
@@ -288,8 +289,9 @@ border: 1px solid rgba(255, 255, 255, 0.07);
 .formu .enca h8{
   font-family: 'Manrope', sans-serif;
   font-size: 30px;
-  text-align: center;
-  padding-top: 3vw;
+
+  margin-top: 2vw;
+  margin-left: 14%;
 }
 
 .formu .enca h9{
@@ -310,19 +312,42 @@ border: 1px solid rgba(255, 255, 255, 0.07);
   padding: 12px;
   border: 1px solid #9797a681;
   border-radius: 10px;
-  margin: 10px 4vw 10px 4vw;
   font-family: 'Noto Sans', sans-serif;
   outline: none;
 }
 
+.formu .ingre .nombres{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 4vw 10px 4vw;
+
+  
+}
+
+.formu .ingre .nombres input{
+  margin-left: 2vw;
+}
+
+#ema{
+  margin-left: 6vw;
+  width: 66%;
+  margin-bottom: 12px;
+}
+
 .formu .ingre #password{
-  width: 75%;
+  width: 66%;
+  margin-left: 6vw;
 }
 
 .formu .ingre .contras i{
-  margin-left: -105px;
+  margin-left: -38px;
 }
 
+#env{
+  margin-left: 14%;
+  margin-top: 12px;
+  width: 28vw;
+}
 
 
 #titu2{
@@ -362,7 +387,7 @@ border: 1px solid rgba(255, 255, 255, 0.07);
   margin-top: 1.8vw;
   margin-left: 3vw;
   width: 80%;
-  background: rgba( 255, 152, 0, 0.9 );
+  background: rgba(255, 153, 0, 0.902);
   box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur( 11.5px );
   -webkit-backdrop-filter: blur( 11.5px );
@@ -376,11 +401,11 @@ border: 1px solid rgba(255, 255, 255, 0.07);
 
 
 .regi:hover {
-  background-color: #2bef86;
+  background-color: #ffb23ee6;
   transition: 1.8s;
 }
 .regi:active {
-  background: #16a085;
+  background: #d6ff33;
 }
 
 
@@ -395,7 +420,7 @@ border: 1px solid rgba(255, 255, 255, 0.07);
 .nocu{
   margin-top: 2vw;
   margin-bottom: 2vw;
-  margin-left: 8vw;
+  margin-left: 14%;
   display: flex;
   flex-direction: row;
 }
@@ -438,6 +463,19 @@ border: 1px solid rgba(255, 255, 255, 0.07);
 #nocuen a:hover::before{
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.image{
+  width: 60%;
+}
+
+
+.image img{
+  width: 100%;
+  height: 100%;
+  margin-top: 1vw;
+  
+  
 }
 
 
