@@ -98,10 +98,7 @@
         <div class="produc">
             <div id="titular">
                 <h1>Nuevos productos</h1>
-                <span tooltip="Agregar Producto" flow="down"><i onclick="openmodal()" class="fa-solid fa-pen-to-square"></i></span>
                 <p id="button" class="btn" onclick="openmodal()"><span tooltip="Agregar Producto" flow="down"><i class="fa-solid fa-plus"></i></p></span>
-
-                
                 <script>
                         function openmodal() {
                         var mdl = document.getElementById("myModal");
@@ -115,19 +112,60 @@
                 </script>
 
             </div>
-
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                <span class="close_modal" onclick="closemodal()">&times;</span>
-                <p class="modal_text">You must be registered and logged in for this action.</p>
-                <br>
-                <form class="modal_voto">
-                <a href="#" class="btn_modal" target="_blank">Login</a>
-                <a href="#" class="btn_modal" target="_blank">Register</a>
-                </form>
-                </div>
-            </div>
+                    <span class="close_modal" onclick="closemodal()">&times;</span>
+                    <p class="modal_text">Agrega un nuevo producto</p>
+                    <div class="select">
+                        <div class="desple">
+                            <output id="list"></output>
+                            <input type="file" id="files" name="files[]"/><br />
+                            
+                            <script>
+                            function archivo(evt) {
+                            var files = evt.target.files;       
+                            for (var i = 0, f; f = files[i]; i++) {         
+                            if (!f.type.match('image.*')) {
+                                    continue;
+                            }
+                            var reader = new FileReader();
+                            reader.onload = (function(theFile) {
+                            return function(e) {
+                            document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                            };
+                            })(f);
+                            reader.readAsDataURL(f);
+                            }
+                            }
+                            document.getElementById('files').addEventListener('change', archivo, false);
+                            </script>
+                            
+                        </div>
+                        <div class="ingre">
+                            <h9 id="arr">Nombre Del Producto</h9>
+                            <input id="mail" placeholder="Catry" required>
 
+                            <h9 id="arr">Titulo Del Producto</h9>
+                            <input id="mail" placeholder="Catry Torre Deluxe para Gatos" required>
+
+
+                            <h9 id="arr">Descripción del producto</h9>
+                            <input id="mail" placeholder="Tu gato se sentirá cómodo y feliz en esta torre para gatos " required>
+
+                            <h9 id="arr">Precio Del Producto</h9>
+                            <input id="mail" placeholder="$104.99" required>
+                        </div>
+                    </div>
+                    
+                    <form class="modal_voto">
+                        <button href="#" type="button" class="btn btn-warning" target="_blank">Subir Producto</button>
+                        <button href="#" type="button" class="btn btn-warning" target="_blank">Cancelar Producto</button>
+                    </form>
+                </div>
+                    
+            </div>
+                
+        </div>
             <div class="fia">
                 <div class="conten">
                     <div class="product-card">

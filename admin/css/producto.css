@@ -431,7 +431,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 #titular i{
   color: #353539;
-  margin-top: 45px;
+  margin-top: 30px;
   font-size: 20px;
 }
 
@@ -440,9 +440,15 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 13vw;
 }
 
-
+.desple{
+  margin-left: 13vw;
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+}
 
 .product-card {
     width: 355px;
@@ -555,6 +561,70 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /*Ventana Emergente*/
+.select{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.select .ingre{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5vw;
+  margin-left: 8vw;
+}
+
+.ingre input{
+  padding: 12px;
+  border: 1px solid #9797a681;
+  border-radius: 10px;
+  margin: 10px 4vw 10px 4vw;
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
+}
+
+#arr{
+  padding-left: 4vw;
+  font-size: 16px;
+}
+
+.thumb{
+  height: 300px;
+  border: 1px solid #000;
+  margin: 10px 5px 0 0;
+}
+
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: #4245a8;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
+
+
+
 .modal {
   display: none;
   position: fixed; /* Stay in place */
@@ -569,7 +639,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  .modal_text {color: black; font-size: 20px;}
+  .modal_text {
+    color: black; 
+    font-size: 20px;
+    text-align: center;
+  }
   
   .modal-content {
   background-color: #fefefe;
