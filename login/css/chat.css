@@ -192,7 +192,11 @@ main {
   [tooltip][flow^="up"]::after {
     left: 50%;
     transform: translate(-50%, -.5em);
-  }
+    -webkit-transform: translate(-50%, -.5em);
+    -moz-transform: translate(-50%, -.5em);
+    -ms-transform: translate(-50%, -.5em);
+    -o-transform: translate(-50%, -.5em);
+}
   
   /* TOOLTIP: DOWN */
   [tooltip][flow^="down"]::before {
@@ -216,12 +220,20 @@ main {
     border-left-color: #333;
     left: calc(0em - 5px);
     transform: translate(-.5em, -50%);
-  }
+    -webkit-transform: translate(-.5em, -50%);
+    -moz-transform: translate(-.5em, -50%);
+    -ms-transform: translate(-.5em, -50%);
+    -o-transform: translate(-.5em, -50%);
+}
   [tooltip][flow^="left"]::after {
     top: 50%;
     right: calc(100% + 5px);
     transform: translate(-.5em, -50%);
-  }
+    -webkit-transform: translate(-.5em, -50%);
+    -moz-transform: translate(-.5em, -50%);
+    -ms-transform: translate(-.5em, -50%);
+    -o-transform: translate(-.5em, -50%);
+}
   
   /* TOOLTIP: RIGHT */
   [tooltip][flow^="right"]::before {
@@ -230,12 +242,20 @@ main {
     border-right-color: #333;
     right: calc(0em - 5px);
     transform: translate(.5em, -50%);
-  }
+    -webkit-transform: translate(.5em, -50%);
+    -moz-transform: translate(.5em, -50%);
+    -ms-transform: translate(.5em, -50%);
+    -o-transform: translate(.5em, -50%);
+}
   [tooltip][flow^="right"]::after {
     top: 50%;
     left: calc(100% + 5px);
     transform: translate(.5em, -50%);
-  }
+    -webkit-transform: translate(.5em, -50%);
+    -moz-transform: translate(.5em, -50%);
+    -ms-transform: translate(.5em, -50%);
+    -o-transform: translate(.5em, -50%);
+}
   
   /* KEYFRAMES */
   @keyframes tooltips-vert {
@@ -274,37 +294,270 @@ main {
 
 /*Body*/
 
+
+.Consultas{
+  max-width: 40%;
+  height: 68vh;
+  display: inline-block;
+  background-color: #ff9800;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 15vh;
+}
+
+#consulta_Abierta{
+  display: inline-block;
+  position: relative;
+  left: 10vh;
+}
+
+#consulta_Abierta h2  span{
+  color: greenyellow;
+}
+
+#consulta_Mas{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+
+.boton{
+  border: none;
+  background: none;
+}
+
+.boton > i{
+   font-size: 40px;
+}
+.boton > i:hover{
+  color: white;
+}
+
+
+.chatDoctor{
+  background: #DBF6E9;
+  width: 95%;
+  height: 25vh;
+  margin-left: 40px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius:50px ;
+}
+
+.efo{
+  width: 20%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  
+}
+
+#masc{
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#prof{
+  position: relative;
+  margin-top: -42px;
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 70%;
+  height: 100%;
+}
+
+.chatDoctor > .info_Mensaje{
+  float:right;
+  width: 75%;
+}
+
+#consulta_Cerradas{
+  display: inline-block;
+  position: relative;
+  left: 10vh;
+}
+
+.chatDoctor_cerrado{
+  width: 95%;
+  height: 25vh;
+  margin-left: 40px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius:50px ;
+}
+
+.chatDoctor_cerrado > .info_Mensaje{
+  float:right;
+  width: 75%;
+}
+
+
+
+
+
+.chat{
+  max-width:  80%;
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  background-color:#def8ea;
+  border-top-left-radius: 30px;
+  height: 83vh;
+}
+
+.nombre_perfil{
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.foto_perfil{
+  display: inline-block;
+  margin-left: 20%;
+  border-radius: 100%;
+  width: 8%;
+  height: 100%;
+}
+
+.iconos_chat_info{
+  display: inline-block;
+  margin-left: 28%;
+}
+
+.iconos_info{
+  display: inline-block;
+  margin-left: 25px;
+
+}
+
+
+.boton_chat{
+  border: none;
+  background: none;
+}
+
+.boton_chat > i{
+   font-size: 40px;
+}
+.boton_chat > i:hover{
+  color: #ff9800;
+}
+
+
+.enviar_mensajes{
+  position: absolute;
+  top: 73vh;
+}
+.boton_camara{
+  border: none;
+  background: none;
+}
+.boton_camara > i:hover{
+  color: #ff9800;
+}
+
+.icono_camara{
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 5px;
+  margin-left: 8px;
+  margin-top: 8px;
+  
+}
+
+.mensaje-1{
+  width: 50%;
+  padding: 15px;
+  display: inline-block;
+  position: relative;
+  left: 58vh;
+  margin-top: 30px;
+  background: #ff9800;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.mensaje-2{
+  width: 50%;
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  background: #6c6da8;
+  border-radius: 30px;
+}
+
+
+.escribir{
+  display: inline-block;
+}
+.escribir input{
+  width: 640%;
+  height: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+ 
+}
+
+.boton_enviar{
+  display: inline-block;
+  position: absolute;
+  left: 500%;
+  bottom: 5px;
+  border: none;
+  background: none;
+}
+
+.boton_enviar > i:hover{
+  color: #ff9800;
+}
+
+.icono_enviar{
+  margin-top: 8px;
+  margin-right: 12px;
+  font-size: 40px;
+}
+
+
+
+
+
+
 /*FOOter*/
 
 footer .fin{
-    margin-top: 3vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #def8ea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #def8ea;
 }
 
 
 footer .fin .iconos i{
-    color: #36251d;
-    font-size: 20px;
-    margin: 13px;
+  color: #36251d;
+  font-size: 20px;
+  margin: 13px;
 }
 
 footer .fin .iconos i:hover{
-    color: #ff9800 !important;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+  color: #ff9800 !important;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 footer .fin #name p{
-    font-family:'Manrope', sans-serif;
-    font-size: 19px;
-    margin-top: 11px;
-    margin-right: 25px;
+  font-family:'Manrope', sans-serif;
+  font-size: 19px;
+  margin-top: 11px;
+  margin-right: 25px;
 }
 
 /*FOOter*/

@@ -588,6 +588,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-size: 16px;
 }
 
+.dropdown{
+  margin-left: 4vw;
+  margin-top: 10px;
+  margin-bottom: 1vw;
+}
+
 .thumb{
   height: 300px;
   border: 1px solid #000;
