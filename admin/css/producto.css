@@ -447,7 +447,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-left: 8vw;
   margin-top: 2vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .product-card {
@@ -583,6 +583,25 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 23vw;
 }
 
+.nex{
+  margin-top: 1vw;
+}
+
+.nex input{
+  padding: 12px;
+  border: 1px solid #9797a681;
+  border-radius: 10px;
+  margin: 10px 4vw 10px 4vw;
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
+  width: 23vw;
+}
+
+.nex .modal_voto{
+  margin-left: 4vw;
+  margin-top: 2vw;
+}
+
 #arr{
   padding-left: 4vw;
   font-size: 16px;
@@ -595,9 +614,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin-bottom: 1vw;
 }
 
+.nex{
+  display: flex;
+  flex-direction: column;
+}
+
 .thumb{
-  height: 280px;
-  width: 200px;
+  height: 190px;
+  width: 180px;
   border: 1px solid #000;
   margin: 0px 0px 0 0;
 }

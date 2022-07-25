@@ -274,6 +274,24 @@ main {
 
 /*Body*/
 
+.tod{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 12.3vw 1vw 12.3vw;
+}
+
+.tod h1{
+  color: #333;
+  font-family: 'Manrope', sans-serif;
+  font-size: 35px;
+  padding-top: 1vw;
+}
+
+.zon{
+  display: flex;
+  flex-direction: row;
+}
+
 /*FOOter*/
 
 footer .fin{
