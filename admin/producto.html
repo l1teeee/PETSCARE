@@ -53,12 +53,32 @@
                     <div>
                         <a href="producto.html"><span tooltip="Productos" flow="down"><i class="fa-solid fa-cookie"></i></span></a>
                     </div>
+                    <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
                 </main>
-            <div class="cat">
-            </div>
             <div class="pro">
               <a href="perfil.html"><span tooltip="Perfil" flow="down"><i class="fa-solid fa-user"></i></span></a>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="adopcion.html">Adopción</a>
+                  <a href="cita.html">Cita</a>
+                  <a href="chat.html">Chat</a>
+                  <a href="producto.html">Productos</a>
+                  <a href="perfil.html">Perfil</a>
+
+                </div>
+            </div>
+            <script>
+              function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+              }
+              
+              function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+              }
+            </script>
         </div>
     </div>
     <div id="sep1"></div>
@@ -80,7 +100,6 @@
                 <div class="titi1">
                     <a href="productos/Alimentos.html"><img src="../media/food.png" class="img-responsive center-block"></a>
                     <a href="productos/Alimentos.html" id="enca3"><i class="fa-solid fa-chevron-right"></i></a>
-                
                 </div>
 
             </div>
@@ -141,44 +160,47 @@
                             </script>
                             
                         </div>
-                        <div class="ingre">
-                            <h9 id="arr">Nombre Del Producto</h9>
-                            <input id="mail" placeholder="Catry" required>
-
-                            <h9 id="arr">Titulo Del Producto</h9>
-                            <input id="mail" placeholder="Catry Torre Deluxe para Gatos" required>
-
-                            <h9 id="arr">Cantidad Del Producto</h9>
-                            <input id="mail" type="number" min="1" max="15" required>
-
-
-                            <h9 id="arr">Seleccionar categoria</h9>
-
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Categorias
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Accesorios</a>
-                                  <a class="dropdown-item" href="#">Alimentación</a>
-                                  <a class="dropdown-item" href="#">Medicamentos</a>
+                        <div class="otro">
+                            <div class="ingre">
+                                <h9 id="arr">Nombre Del Producto</h9>
+                                <input id="mail" placeholder="Catry" required>
+    
+                                <h9 id="arr">Titulo Del Producto</h9>
+                                <input id="mail" placeholder="Catry Torre Deluxe para Gatos" required>
+    
+                                <h9 id="arr">Cantidad Del Producto</h9>
+                                <input id="mail" type="number" min="1" max="15" required>
+    
+    
+                                <h9 id="arr">Seleccionar categoria</h9>
+    
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Categorias
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Accesorios</a>
+                                      <a class="dropdown-item" href="#">Alimentación</a>
+                                      <a class="dropdown-item" href="#">Medicamentos</a>
+                                    </div>
                                 </div>
+    
+                                
+                                
                             </div>
-
-                            
-                            
+                            <div class="nex">
+                                <h9 id="arr">Descripción del producto</h9>
+                                <input id="mail" placeholder="Tu gato se sentirá cómodo y feliz" required>
+    
+                                <h9 id="arr">Precio Del Producto</h9>
+                                <input id="mail" placeholder="$104.99" required>
+                                <form class="modal_voto">
+                                    <button href="#" type="button" class="btn btn-warning" target="_blank">Subir Producto</button>
+                                    <button href="#" type="button" class="btn btn-warning" target="_blank">Cancelar Producto</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="nex">
-                            <h9 id="arr">Descripción del producto</h9>
-                            <input id="mail" placeholder="Tu gato se sentirá cómodo y feliz" required>
 
-                            <h9 id="arr">Precio Del Producto</h9>
-                            <input id="mail" placeholder="$104.99" required>
-                            <form class="modal_voto">
-                                <button href="#" type="button" class="btn btn-warning" target="_blank">Subir Producto</button>
-                                <button href="#" type="button" class="btn btn-warning" target="_blank">Cancelar Producto</button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -205,6 +227,7 @@
                           </div>
                         </div>
                     </div>
+                    
                 </div>
                 
             </div>

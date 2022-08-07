@@ -412,7 +412,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .produc{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 10px 12.3vw 1vw 12.3vw;
   
 }
@@ -427,7 +427,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .fia{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 
