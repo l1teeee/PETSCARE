@@ -49,11 +49,46 @@
                 <div id="sep"></div>
                 <a href="producto.html"><i class="fa-solid fa-cookie"></i></a>
                 <div id="sep"></div>-->
-            <div class="cat">
-            </div>
+            
             <div class="pro">
                 <a href="perfil.html"><span tooltip="Perfil" flow="down"><i class="fa-solid fa-user"></i></span></a>
 
+            </div>
+            <div id="menuDemo">
+                <!--start CssMenu-->
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon" onclick="toggleCssMenu(this)">
+                        <div class="three-line">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cssmenu">
+                    <ul>
+                        <li><a href="cita.html"><i class="fa-solid fa-stethoscope"></i></a></li>
+                        <li><a href="adopcion.html"><i class="fa-solid fa-dog"></i></a></li>
+                        <li><a href="chat.html"><i class="fa-solid fa-comments"></i></a></li>
+                        <li><a href="producto.html"><i class="fa-solid fa-cookie"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    function toggleCssMenu(icon) {
+                        var cssmenu = document.getElementById('cssmenu');
+                        if (icon.className.indexOf('active') == -1) {
+                            icon.className = 'menu-icon active';
+                            cssmenu.style.display = "block";
+                            setTimeout(function(){cssmenu.className = 'active';},0);            
+                        }
+                        else {
+                            icon.className = 'menu-icon';
+                            cssmenu.className = '';
+                            setTimeout(function(){cssmenu.style.display = "none";},411); 
+                        }
+                    }
+                </script>
+                <!--end CssMenu-->
             </div>
         </div>
     </div>

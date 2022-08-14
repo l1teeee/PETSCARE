@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,12 @@
     
     <title>Pets Care</title>
 </head>
+<script>
+    window.scroll({
+        top: 0,
+        behavior: 'smooth',
+    })
+</script>
 <header>
     <div class="sup">
         <div id="logo">
@@ -53,35 +59,49 @@
                     <div>
                         <a href="producto.html"><span tooltip="Productos" flow="down"><i class="fa-solid fa-cookie"></i></span></a>
                     </div>
-                    <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
                 </main>
             <div class="pro">
               <a href="perfil.html"><span tooltip="Perfil" flow="down"><i class="fa-solid fa-user"></i></span></a>
             </div>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="adopcion.html">Adopción</a>
-                  <a href="cita.html">Cita</a>
-                  <a href="chat.html">Chat</a>
-                  <a href="producto.html">Productos</a>
-                  <a href="perfil.html">Perfil</a>
-
+            <div id="menuDemo">
+                <!--start CssMenu-->
+                <div class="menu-icon-wrapper">
+                    <div class="menu-icon" onclick="toggleCssMenu(this)">
+                        <div class="three-line">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
+                <div id="cssmenu">
+                    <ul>
+                        <li><a href="cita.html"><i class="fa-solid fa-stethoscope"></i></a></li>
+                        <li><a href="adopcion.html"><i class="fa-solid fa-dog"></i></a></li>
+                        <li><a href="chat.html"><i class="fa-solid fa-comments"></i></a></li>
+                        <li><a href="producto.html"><i class="fa-solid fa-cookie"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    function toggleCssMenu(icon) {
+                        var cssmenu = document.getElementById('cssmenu');
+                        if (icon.className.indexOf('active') == -1) {
+                            icon.className = 'menu-icon active';
+                            cssmenu.style.display = "block";
+                            setTimeout(function(){cssmenu.className = 'active';},0);            
+                        }
+                        else {
+                            icon.className = 'menu-icon';
+                            cssmenu.className = '';
+                            setTimeout(function(){cssmenu.style.display = "none";},411); 
+                        }
+                    }
+                </script>
+                <!--end CssMenu-->
             </div>
-            <script>
-              function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-              }
-              
-              function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-              }
-            </script>
         </div>
     </div>
-    <div id="sep1"></div>
 </header>
 <body style="background-color: #FFF2EA">
     <div class="todi">
@@ -213,7 +233,7 @@
                         </div>
                         <div class="product-details">
                           <span class="product-catagory">Catry</span>
-                          <h4><a href="">Catry Torre Deluxe para Gatos con Toldo y Camas Afelpadas</a></h4>
+                          <h4><a href="productos/MERCADERIA/producto.html">Catry Torre Deluxe para Gatos con Toldo y Camas Afelpadas</a></h4>
                           <p>Tu gato se sentirá cómodo y feliz en esta torre para gatos de cuerda de papel con dos áreas de descanso afelpadas y un gran apartamento. Postes rascadores cubiertos de soga, juguete con cuerda de sisal y otros juguetes para más diversión.</p>
                           <div class="product-bottom-details">
                             <div class="product-price"><small>$175.00</small>$104.99</div>
@@ -312,7 +332,7 @@
         <div class="iconos">
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
 
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#top"><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div id="name">
